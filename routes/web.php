@@ -28,3 +28,9 @@ Route::get('pro' , function(){
     return view('bienvenido');
 
 });
+
+
+
+Route::get('extriangulo', 'TrianguloController@extriangulo');
+
+Route::post('soluciontri', ['as' => 'extriangulo.soluciontri', 'uses' => 'TrianguloController@soluciontri']);
