@@ -21,4 +21,5 @@ class TrianguloController extends Controller
             'r1' => $r1,
         ]);
     }
+    
 }

@@ -26,11 +26,15 @@ Route::get('user/{id}', function ($id) {
 });
 Route::get('pro' , function(){
     return view('bienvenido');
-
 });
 
+/*Route::get('cal' , function(){
+    return view('calculadora');
+});*/
 
 
 Route::get('extriangulo', 'TrianguloController@extriangulo');
-
 Route::post('soluciontri', ['as' => 'extriangulo.soluciontri', 'uses' => 'TrianguloController@soluciontri']);
+
+Route::get('calculadora', 'CalculadoraController@calculadora');
+Route::post('solucionsuma', ['as' => 'calculadora.solucionsuma', 'uses' => 'CalculadoraController@solucionsuma']);
